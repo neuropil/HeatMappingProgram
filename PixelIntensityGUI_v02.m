@@ -66,7 +66,6 @@ set(handles.pmPanel,'Visible','off');
 
 set(handles.statusThresh,'Visible','off')
 axes(handles.statusThresh)
-imshow('Close_Box_Red.jpg');
 
 % set(handles.pDatapanel,'Visible','off')
 % set(handles.kdens,'XTickLabel',[],'YTickLabel',[]);

@@ -1015,6 +1015,8 @@ switch expquest
             
             cla(handles.imagePlace);
             
+            cd(handles.PathName)
+            
             handles.lImagefile = imread(handles.FileName);
             handles.Red = handles.lImagefile;
             handles.Green = handles.lImagefile;

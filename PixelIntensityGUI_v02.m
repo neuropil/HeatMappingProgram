@@ -463,7 +463,6 @@ handles.red_threshold = red_threshold;
 handles.green_threshold = green_threshold;
 
 axes(handles.statusThresh)
-imshow('greenCheck.jpg');
 set(handles.mPixelT,'Enable','off')
 
 set(handles.hmPanel,'Visible','on')

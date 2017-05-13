@@ -137,7 +137,7 @@ else
     dirFile = dirout(3).name;
     [~,~,extension] = fileparts(dirFile);
     
-    if ~ismember(extension,{'.tiff','.tif'});
+    if ~ismember(extension,{'.tiff','.tif'})
         warndlg('Folder does NOT contain .tif files!!');
         return
     else
@@ -944,13 +944,15 @@ else
     % Construct a questdlg with three options
     imgType = questdlg('Choose image export file type', ...
         'Image File Type', ...
-        'TIF','JPEG','TIF');
+        'TIF','TIFF','JPEG','TIF');
     % Handle response
     switch imgType
         case 'TIF'
             imageExt = '.tif';
         case 'JPEG'
             imageExt = '.jpg';
+        case 'TIFF'
+            imageExt = '.tiff';
     end
     
     polyQuest = questdlg('With or without polygon overlay', ...
